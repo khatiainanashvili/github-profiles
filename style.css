@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+:root{
+    --border-color:rgb(79, 199, 243);
+    --fill-color:rgb(79, 119, 251);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: rgb(39, 4, 87);
+    color:white; 
+    height: 100vh;
+}
+
+.user-form{
+    width: 100%;
+    max-width: 700px;
+}
+.user-form input {
+    width: 100%;
+    display: block;
+    background-color: rgb(177, 128, 245);
+    border: 0;
+    color:rgb(251, 247, 247);
+    padding: 16px;
+    margin-bottom: 24px;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(24, 15, 15, 0.37);
+    border-radius: 20px;
+}
+.user-form input::placeholder{
+    color: aliceblue;
+}
+.user-form input:focus {
+    outline: none;
+}
+.card {
+    max-width: 800px;
+    background-color:  rgb(177, 128, 245);
+   box-shadow: 0 5px 10px rgba(24, 15, 15, 0.37);
+   display: flex;
+   padding: 3rem;
+   margin: 0 1.5rem;
+   border-radius: 20px;
+}
+.avatar {
+    border-radius: 50%;
+    border: 10px solid rgb(28, 64, 246);
+    height: 150px;
+    width: 150px;
+}
+.user-info {
+    color: aliceblue;
+    margin: 2rem;
+}
+.user-info h2 {
+    margin-top: 0;
+}
+.user-info ul {
+    list-style: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 400px;
+}
+
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+.repo {
+    text-decoration: 0;
+    color: aliceblue;
+    background-color: rgb(3, 44, 88);
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+@media(max-width: 500px) {
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .user-form {
+        max-width: 400px;
+    }
+}
